@@ -1,0 +1,69 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\emman\\source\\repos\\Biblioteca\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CBEFBA7F-C25D-4488-8550-1377CCB67A9F}|Biblioteca\\Biblioteca.csproj|c:\\users\\emman\\source\\repos\\biblioteca\\biblioteca\\vistas\\vistaprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBEFBA7F-C25D-4488-8550-1377CCB67A9F}|Biblioteca\\Biblioteca.csproj|solutionrelative:biblioteca\\vistas\\vistaprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBEFBA7F-C25D-4488-8550-1377CCB67A9F}|Biblioteca\\Biblioteca.csproj|c:\\users\\emman\\source\\repos\\biblioteca\\biblioteca\\vistas\\vistausuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CBEFBA7F-C25D-4488-8550-1377CCB67A9F}|Biblioteca\\Biblioteca.csproj|solutionrelative:biblioteca\\vistas\\vistausuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBEFBA7F-C25D-4488-8550-1377CCB67A9F}|Biblioteca\\Biblioteca.csproj|c:\\users\\emman\\source\\repos\\biblioteca\\biblioteca\\vistas\\vistaprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CBEFBA7F-C25D-4488-8550-1377CCB67A9F}|Biblioteca\\Biblioteca.csproj|solutionrelative:biblioteca\\vistas\\vistaprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "vistaUsuarios.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\emman\\source\\repos\\Biblioteca\\Biblioteca\\Vistas\\vistaUsuarios.cs",
+              "RelativeDocumentMoniker": "Biblioteca\\Vistas\\vistaUsuarios.cs",
+              "ToolTip": "C:\\Users\\emman\\source\\repos\\Biblioteca\\Biblioteca\\Vistas\\vistaUsuarios.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Biblioteca\\Vistas\\vistaUsuarios.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-08T03:11:59.884Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "vistaPrincipal.cs",
+              "DocumentMoniker": "C:\\Users\\emman\\source\\repos\\Biblioteca\\Biblioteca\\Vistas\\vistaPrincipal.cs",
+              "RelativeDocumentMoniker": "Biblioteca\\Vistas\\vistaPrincipal.cs",
+              "ToolTip": "C:\\Users\\emman\\source\\repos\\Biblioteca\\Biblioteca\\Vistas\\vistaPrincipal.cs",
+              "RelativeToolTip": "Biblioteca\\Vistas\\vistaPrincipal.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAD4vxgAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-08T03:01:55.818Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "vistaPrincipal.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\emman\\source\\repos\\Biblioteca\\Biblioteca\\Vistas\\vistaPrincipal.cs",
+              "RelativeDocumentMoniker": "Biblioteca\\Vistas\\vistaPrincipal.cs",
+              "ToolTip": "C:\\Users\\emman\\source\\repos\\Biblioteca\\Biblioteca\\Vistas\\vistaPrincipal.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Biblioteca\\Vistas\\vistaPrincipal.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-08T02:59:33.867Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

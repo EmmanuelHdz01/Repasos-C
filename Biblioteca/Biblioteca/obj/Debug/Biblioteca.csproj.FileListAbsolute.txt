@@ -1,0 +1,13 @@
+C:\Users\emman\source\repos\Biblioteca\Biblioteca\bin\Debug\Biblioteca.exe.config
+C:\Users\emman\source\repos\Biblioteca\Biblioteca\bin\Debug\Biblioteca.exe
+C:\Users\emman\source\repos\Biblioteca\Biblioteca\bin\Debug\Biblioteca.pdb
+C:\Users\emman\source\repos\Biblioteca\Biblioteca\obj\Debug\Biblioteca.csproj.AssemblyReference.cache
+C:\Users\emman\source\repos\Biblioteca\Biblioteca\obj\Debug\Biblioteca.Properties.Resources.resources
+C:\Users\emman\source\repos\Biblioteca\Biblioteca\obj\Debug\Biblioteca.csproj.GenerateResource.cache
+C:\Users\emman\source\repos\Biblioteca\Biblioteca\obj\Debug\Biblioteca.csproj.CoreCompileInputs.cache
+C:\Users\emman\source\repos\Biblioteca\Biblioteca\obj\Debug\Biblioteca.exe
+C:\Users\emman\source\repos\Biblioteca\Biblioteca\obj\Debug\Biblioteca.pdb
+C:\Users\emman\source\repos\Biblioteca\Biblioteca\obj\Debug\Biblioteca.exe.config
+C:\Users\emman\source\repos\Biblioteca\Biblioteca\obj\Debug\Biblioteca.vistaLogin.resources
+C:\Users\emman\source\repos\Biblioteca\Biblioteca\obj\Debug\Biblioteca.vistaPrincipal.resources
+C:\Users\emman\source\repos\Biblioteca\Biblioteca\obj\Debug\Biblioteca.Vistas.vistaUsuarios.resources
