@@ -24,5 +24,12 @@ namespace Biblioteca
             vista.MdiParent = this;
             vista.Show();
         }
+
+        private void mdiLibros_Click(object sender, EventArgs e)
+        {
+            vistaLibros vista = new vistaLibros();
+            vista.MdiParent = this;
+            vista.Show();
+        }
     }
 }

@@ -73,6 +73,7 @@
             this.mdiLibros.Name = "mdiLibros";
             this.mdiLibros.Size = new System.Drawing.Size(180, 22);
             this.mdiLibros.Text = "Libros";
+            this.mdiLibros.Click += new System.EventHandler(this.mdiLibros_Click);
             // 
             // vistaPrincipal
             // 
