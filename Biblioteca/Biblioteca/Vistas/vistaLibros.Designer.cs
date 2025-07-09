@@ -55,6 +55,7 @@
             this.txtCopias = new System.Windows.Forms.TextBox();
             this.btnActualizar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
+            this.btnLimpiar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvLibros)).BeginInit();
             this.SuspendLayout();
             // 
@@ -196,7 +197,6 @@
             // 
             this.txtNumeroPaginas.Location = new System.Drawing.Point(602, 30);
             this.txtNumeroPaginas.Name = "txtNumeroPaginas";
-            this.txtNumeroPaginas.ReadOnly = true;
             this.txtNumeroPaginas.Size = new System.Drawing.Size(100, 20);
             this.txtNumeroPaginas.TabIndex = 8;
             // 
@@ -293,11 +293,22 @@
             this.btnEliminar.Text = "Eliminar libro";
             this.btnEliminar.UseVisualStyleBackColor = true;
             // 
+            // btnLimpiar
+            // 
+            this.btnLimpiar.Location = new System.Drawing.Point(807, 114);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(75, 23);
+            this.btnLimpiar.TabIndex = 20;
+            this.btnLimpiar.Text = "Limpiar campos";
+            this.btnLimpiar.UseVisualStyleBackColor = true;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
+            // 
             // vistaLibros
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(919, 450);
+            this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnActualizar);
             this.Controls.Add(this.txtCopias);
@@ -356,5 +367,6 @@
         private System.Windows.Forms.TextBox txtCopias;
         private System.Windows.Forms.Button btnActualizar;
         private System.Windows.Forms.Button btnEliminar;
+        private System.Windows.Forms.Button btnLimpiar;
     }
 }

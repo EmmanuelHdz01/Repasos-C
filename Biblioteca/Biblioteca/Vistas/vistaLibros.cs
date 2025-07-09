@@ -17,13 +17,32 @@ namespace Biblioteca.Controladores
         public vistaLibros()
         {
             InitializeComponent();
-            dtFechaPublicacion.Format = DateTimePickerFormat.Short;
+            //dtFechaPublicacion.Format = DateTimePickerFormat.Short;
             MostrarLibros();
         }
 
         private void btnAgregarLibro_Click(object sender, EventArgs e)
         {
-
+            modeloLibro inflibro = new modeloLibro()
+            {
+                titulo = txtTitulo.Text,
+                escritor = txtEscritor.Text,
+                numeroPaginas = int.Parse(txtNumeroPaginas.Text),
+                idioma = txtIdioma.Text,
+                fechaPublicacion = dtFechaPublicacion.Value,
+                idGenero = int.Parse(cbGenero.SelectedValue.ToString()),
+                cantidadCopias = int.Parse(txtCopias.Text)
+            };
+            if (controlCRUDLibros.RegistrarLibro(inflibro))
+            {
+                MessageBox.Show("Libro registrado correctamente");
+                MostrarLibros();
+                btnLimpiar.PerformClick();
+            }
+            else
+            {
+                MessageBox.Show("Error al registrar el libro");
+            }
         }
 
         public void MostrarLibros()
@@ -47,6 +66,18 @@ namespace Biblioteca.Controladores
             cbGenero.Text = libro.idGenero.ToString();
             txtCopias.Text = libro.cantidadCopias.ToString();
 
+        }
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            txtIdLibro.Text = "";
+            txtTitulo.Text = "";
+            txtEscritor.Text = "";
+            txtNumeroPaginas.Text = "";
+            txtIdioma.Text = "";
+            dtFechaPublicacion.Value = DateTime.Now;
+            cbGenero.SelectedIndex = -1;
+            txtCopias.Text = "";
         }
     }
 }
