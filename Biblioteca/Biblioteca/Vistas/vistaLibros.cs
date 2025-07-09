@@ -17,6 +17,7 @@ namespace Biblioteca.Controladores
         public vistaLibros()
         {
             InitializeComponent();
+            dtFechaPublicacion.Format = DateTimePickerFormat.Short;
             MostrarLibros();
         }
 
@@ -31,6 +32,20 @@ namespace Biblioteca.Controladores
             controlCRUDLibros.MostrarLibros();
             List<modeloLibro> vistaLibros = controlCRUDLibros.MostrarLibros();
             dtgvLibros.DataSource = vistaLibros;
+
+        }
+
+        private void dtgvJalarDatos(object sender, DataGridViewCellEventArgs e)
+        {
+            modeloLibro libro = dtgvLibros.CurrentRow.DataBoundItem as modeloLibro;
+            txtIdLibro.Text = libro.idLibro.ToString();
+            txtTitulo.Text = libro.titulo;
+            txtEscritor.Text = libro.escritor;
+            txtNumeroPaginas.Text = libro.numeroPaginas.ToString();
+            txtIdioma.Text = libro.idioma;
+            dtFechaPublicacion.Value = libro.fechaPublicacion;
+            cbGenero.Text = libro.idGenero.ToString();
+            txtCopias.Text = libro.cantidadCopias.ToString();
 
         }
     }

@@ -27,3 +27,17 @@ C:\Users\emman\source\repos\Repasos-C\Biblioteca\Biblioteca\bin\Debug\Biblioteca
 C:\Users\emman\source\repos\Repasos-C\Biblioteca\Biblioteca\bin\Debug\Biblioteca.pdb
 C:\Users\emman\source\repos\Repasos-C\Biblioteca\Biblioteca\obj\Debug\Biblioteca.vistaLibros.resources
 C:\Users\emman\source\repos\Repasos-C\Biblioteca\Biblioteca\obj\Debug\Biblioteca.Controladores.vistaLibros.resources
+C:\Users\soporte.pv\Documents\Repasos-C\Biblioteca\Biblioteca\obj\Debug\Biblioteca.csproj.AssemblyReference.cache
+C:\Users\soporte.pv\Documents\Repasos-C\Biblioteca\Biblioteca\obj\Debug\Biblioteca.exe.config
+C:\Users\soporte.pv\Documents\Repasos-C\Biblioteca\Biblioteca\obj\Debug\Biblioteca.vistaLogin.resources
+C:\Users\soporte.pv\Documents\Repasos-C\Biblioteca\Biblioteca\obj\Debug\Biblioteca.Properties.Resources.resources
+C:\Users\soporte.pv\Documents\Repasos-C\Biblioteca\Biblioteca\obj\Debug\Biblioteca.Controladores.vistaLibros.resources
+C:\Users\soporte.pv\Documents\Repasos-C\Biblioteca\Biblioteca\obj\Debug\Biblioteca.vistaPrincipal.resources
+C:\Users\soporte.pv\Documents\Repasos-C\Biblioteca\Biblioteca\obj\Debug\Biblioteca.Vistas.vistaUsuarios.resources
+C:\Users\soporte.pv\Documents\Repasos-C\Biblioteca\Biblioteca\obj\Debug\Biblioteca.csproj.GenerateResource.cache
+C:\Users\soporte.pv\Documents\Repasos-C\Biblioteca\Biblioteca\obj\Debug\Biblioteca.csproj.CoreCompileInputs.cache
+C:\Users\soporte.pv\Documents\Repasos-C\Biblioteca\Biblioteca\obj\Debug\Biblioteca.exe
+C:\Users\soporte.pv\Documents\Repasos-C\Biblioteca\Biblioteca\obj\Debug\Biblioteca.pdb
+C:\Users\soporte.pv\Documents\Repasos-C\Biblioteca\Biblioteca\bin\Debug\Biblioteca.exe.config
+C:\Users\soporte.pv\Documents\Repasos-C\Biblioteca\Biblioteca\bin\Debug\Biblioteca.exe
+C:\Users\soporte.pv\Documents\Repasos-C\Biblioteca\Biblioteca\bin\Debug\Biblioteca.pdb

@@ -48,7 +48,7 @@
             this.menuToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1026, 24);
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -64,14 +64,14 @@
             // mdiUsuarios
             // 
             this.mdiUsuarios.Name = "mdiUsuarios";
-            this.mdiUsuarios.Size = new System.Drawing.Size(180, 22);
+            this.mdiUsuarios.Size = new System.Drawing.Size(119, 22);
             this.mdiUsuarios.Text = "Usuarios";
             this.mdiUsuarios.Click += new System.EventHandler(this.mdiUsuarios_Click);
             // 
             // mdiLibros
             // 
             this.mdiLibros.Name = "mdiLibros";
-            this.mdiLibros.Size = new System.Drawing.Size(180, 22);
+            this.mdiLibros.Size = new System.Drawing.Size(119, 22);
             this.mdiLibros.Text = "Libros";
             this.mdiLibros.Click += new System.EventHandler(this.mdiLibros_Click);
             // 
@@ -79,7 +79,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1026, 542);
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
