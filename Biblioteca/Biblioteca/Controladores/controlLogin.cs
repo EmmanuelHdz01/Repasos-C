@@ -35,8 +35,8 @@ namespace Biblioteca.Controladores
 
         public static SqlConnection conn()
         {
-            //SqlConnection cmd = new SqlConnection("Data Source=WORK-TEAM\\SQLEXPRESS; DATABASE = Biblioteca; Integrated Security=True");
-            SqlConnection cmd = new SqlConnection("Data Source=.; DATABASE = Biblioteca; Integrated Security=True");
+            SqlConnection cmd = new SqlConnection("Data Source=WORK-TEAM\\SQLEXPRESS; DATABASE = Biblioteca; Integrated Security=True");
+            //SqlConnection cmd = new SqlConnection("Data Source=.; DATABASE = Biblioteca; Integrated Security=True");
             return cmd;
         }
     }

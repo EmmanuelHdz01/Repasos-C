@@ -30,7 +30,7 @@ namespace Biblioteca
             if (controlLogin.ValidarUsuarios (data))
             {
                 Hide();
-                MessageBox.Show("Bienvenido " + data.usuario, "Acceso concedido", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //MessageBox.Show("Bienvenido " + data.usuario, "Acceso concedido", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 vistaPrincipal principal = new vistaPrincipal();
                 principal.ShowDialog();
                 Show();

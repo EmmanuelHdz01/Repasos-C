@@ -18,7 +18,8 @@ namespace Biblioteca.Controladores
         {
             InitializeComponent();
             //dtFechaPublicacion.Format = DateTimePickerFormat.Short;
-            MostrarLibros();
+            MostrarLibro();
+            MostrarGeneros();
         }
 
         private void btnAgregarLibro_Click(object sender, EventArgs e)
@@ -29,15 +30,14 @@ namespace Biblioteca.Controladores
                 escritor = txtEscritor.Text,
                 numeroPaginas = int.Parse(txtNumeroPaginas.Text),
                 idioma = txtIdioma.Text,
-                fechaPublicacion = dtFechaPublicacion.Value,
+                fechaPublicacion = dtFechaPublicacion.Value.Date,
                 idGenero = int.Parse(cbGenero.SelectedValue.ToString()),
                 cantidadCopias = int.Parse(txtCopias.Text)
             };
             if (controlCRUDLibros.RegistrarLibro(inflibro))
             {
                 MessageBox.Show("Libro registrado correctamente");
-                MostrarLibros();
-                btnLimpiar.PerformClick();
+                MostrarLibro();
             }
             else
             {
@@ -45,7 +45,7 @@ namespace Biblioteca.Controladores
             }
         }
 
-        public void MostrarLibros()
+        public void MostrarLibro()
         {
             dtgvLibros.AutoGenerateColumns = false;
             controlCRUDLibros.MostrarLibros();
@@ -53,6 +53,16 @@ namespace Biblioteca.Controladores
             dtgvLibros.DataSource = vistaLibros;
 
         }
+
+        public void MostrarGeneros()
+        {
+            controlCRUDLibros control = new controlCRUDLibros();
+            cbGenero.DataSource = control.MostrarGeneros();
+            cbGenero.DisplayMember = "tipoGenero";
+            cbGenero.ValueMember = "idGenero";
+        }
+
+
 
         private void dtgvJalarDatos(object sender, DataGridViewCellEventArgs e)
         {
@@ -78,6 +88,7 @@ namespace Biblioteca.Controladores
             dtFechaPublicacion.Value = DateTime.Now;
             cbGenero.SelectedIndex = -1;
             txtCopias.Text = "";
+            MostrarLibro();
         }
     }
 }

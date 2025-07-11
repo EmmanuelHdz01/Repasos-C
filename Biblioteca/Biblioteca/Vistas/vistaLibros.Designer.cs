@@ -148,7 +148,6 @@
             // 
             this.txtIdLibro.Location = new System.Drawing.Point(21, 30);
             this.txtIdLibro.Name = "txtIdLibro";
-            this.txtIdLibro.ReadOnly = true;
             this.txtIdLibro.Size = new System.Drawing.Size(68, 20);
             this.txtIdLibro.TabIndex = 2;
             // 
