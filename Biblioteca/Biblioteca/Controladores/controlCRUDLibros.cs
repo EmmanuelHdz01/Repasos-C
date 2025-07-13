@@ -19,8 +19,8 @@ namespace Biblioteca
                 {
                     connection.Open();
                     SqlCommand comando = new SqlCommand("INSERT INTO tblLibro " +
-                        "(Titulo, Escritor, NumeroPaginas, Idioma, FechaPublicacion, idGenero, CantidadCopias) " +
-                        "VALUES (@Titulo, @Escritor, @NumeroPaginas, @Idioma, @FechaPublicacion, @idGenero, @CantidadCopias)", connection);
+                        "(idLibro,Titulo, Escritor, NumeroPaginas, Idioma, FechaPublicacion, idGenero, CantidadCopias) " +
+                        "VALUES ((SELECT MAX(idLibro)+1 FROM tblLibro), @Titulo, @Escritor, @NumeroPaginas, @Idioma, @FechaPublicacion, @idGenero, @CantidadCopias)", connection);
                     comando.Parameters.AddWithValue("@Titulo", libro.titulo);
                     comando.Parameters.AddWithValue("@Escritor", libro.escritor);
                     comando.Parameters.AddWithValue("@NumeroPaginas", libro.numeroPaginas);
@@ -74,8 +74,12 @@ namespace Biblioteca
             {
                 using (SqlConnection connection = conn())
                 {
+                    string query = @"SELECT L.idLibro,L.Titulo, L.Escritor, L.NumeroPaginas, L.Idioma, L.FechaPublicacion, G.idGenero,
+                                    G.TipoGenero, L.CantidadCopias 
+                                    FROM tblLibro AS L 
+                                    LEFT JOIN tblGenero AS G ON L.idGenero = G.idGenero";
                     connection.Open();
-                    SqlCommand consulta = new SqlCommand("SELECT * FROM tblLibro", connection);
+                    SqlCommand consulta = new SqlCommand(query, connection);
 
                     List<modeloLibro> libros = new List<modeloLibro>();
 
@@ -89,8 +93,16 @@ namespace Biblioteca
                         datos.numeroPaginas = (int)reader["NumeroPaginas"];
                         datos.idioma = reader["Idioma"].ToString();
                         datos.fechaPublicacion = (DateTime)reader["FechaPublicacion"];
-                        datos.idGenero = (int)reader["idGenero"];
+                        datos.idGenero = reader["idGenero"] == DBNull.Value ? 0 : (int)reader["idGenero"];
                         datos.cantidadCopias = (int)reader["CantidadCopias"];
+
+                        modeloGenero genero = new modeloGenero();
+                        genero.idGenero = reader["idGenero"] == DBNull.Value ? 0 : (int)reader["idGenero"];
+                        genero.tipoGenero = reader["TipoGenero"] == DBNull.Value ? "Sin genero" : reader["TipoGenero"].ToString();
+                        
+
+                        // Se genera una instancia para la asignacion del género
+                        datos.tipoGeneroL = genero;
 
                         libros.Add(datos);
                     }

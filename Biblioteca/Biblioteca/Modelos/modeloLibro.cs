@@ -15,6 +15,22 @@ namespace Biblioteca.Modelos
         public string idioma { get; set; }
         public DateTime fechaPublicacion { get; set; }
         public int idGenero { get; set; }
+        public string descripcionGenero
+        {
+            get
+            {
+                if (tipoGeneroL != null)
+                {
+                    return tipoGeneroL.tipoGenero;
+                }
+                else
+                {
+                    return "No hay";
+                }
+
+            }
+        }
+        public modeloGenero tipoGeneroL { get; set; }
         public int cantidadCopias { get; set; }
     }
 }

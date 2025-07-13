@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Biblioteca.Controladores;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,7 @@ namespace Biblioteca
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new vistaLogin());
+            Application.Run(new vistaLibros());
         }
     }
 }
