@@ -3,27 +3,19 @@
   "WorkspaceRootPath": "C:\\Users\\emman\\source\\repos\\Repasos-C\\Biblioteca\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CBEFBA7F-C25D-4488-8550-1377CCB67A9F}|Biblioteca\\Biblioteca.csproj|C:\\Users\\emman\\source\\repos\\Repasos-C\\Biblioteca\\biblioteca\\controladores\\controlcrudlibros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CBEFBA7F-C25D-4488-8550-1377CCB67A9F}|Biblioteca\\Biblioteca.csproj|solutionrelative:biblioteca\\controladores\\controlcrudlibros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CBEFBA7F-C25D-4488-8550-1377CCB67A9F}|Biblioteca\\Biblioteca.csproj|c:\\users\\emman\\source\\repos\\repasos-c\\biblioteca\\biblioteca\\vistas\\vistalibros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBEFBA7F-C25D-4488-8550-1377CCB67A9F}|Biblioteca\\Biblioteca.csproj|solutionrelative:biblioteca\\vistas\\vistalibros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CBEFBA7F-C25D-4488-8550-1377CCB67A9F}|Biblioteca\\Biblioteca.csproj|C:\\Users\\emman\\source\\repos\\Repasos-C\\Biblioteca\\biblioteca\\vistas\\vistalibros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{CBEFBA7F-C25D-4488-8550-1377CCB67A9F}|Biblioteca\\Biblioteca.csproj|solutionrelative:biblioteca\\vistas\\vistalibros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CBEFBA7F-C25D-4488-8550-1377CCB67A9F}|Biblioteca\\Biblioteca.csproj|c:\\users\\emman\\source\\repos\\repasos-c\\biblioteca\\biblioteca\\vistas\\vistalibros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CBEFBA7F-C25D-4488-8550-1377CCB67A9F}|Biblioteca\\Biblioteca.csproj|solutionrelative:biblioteca\\vistas\\vistalibros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CBEFBA7F-C25D-4488-8550-1377CCB67A9F}|Biblioteca\\Biblioteca.csproj|C:\\Users\\emman\\source\\repos\\Repasos-C\\Biblioteca\\biblioteca\\controladores\\controlcrudlibros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBEFBA7F-C25D-4488-8550-1377CCB67A9F}|Biblioteca\\Biblioteca.csproj|solutionrelative:biblioteca\\controladores\\controlcrudlibros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CBEFBA7F-C25D-4488-8550-1377CCB67A9F}|Biblioteca\\Biblioteca.csproj|c:\\users\\emman\\source\\repos\\repasos-c\\biblioteca\\biblioteca\\modelos\\modelolibro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CBEFBA7F-C25D-4488-8550-1377CCB67A9F}|Biblioteca\\Biblioteca.csproj|solutionrelative:biblioteca\\modelos\\modelolibro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CBEFBA7F-C25D-4488-8550-1377CCB67A9F}|Biblioteca\\Biblioteca.csproj|c:\\users\\emman\\source\\repos\\repasos-c\\biblioteca\\biblioteca\\modelos\\modelogenero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CBEFBA7F-C25D-4488-8550-1377CCB67A9F}|Biblioteca\\Biblioteca.csproj|solutionrelative:biblioteca\\modelos\\modelogenero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CBEFBA7F-C25D-4488-8550-1377CCB67A9F}|Biblioteca\\Biblioteca.csproj|c:\\users\\emman\\source\\repos\\repasos-c\\biblioteca\\biblioteca\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CBEFBA7F-C25D-4488-8550-1377CCB67A9F}|Biblioteca\\Biblioteca.csproj|C:\\Users\\emman\\source\\repos\\Repasos-C\\Biblioteca\\biblioteca\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CBEFBA7F-C25D-4488-8550-1377CCB67A9F}|Biblioteca\\Biblioteca.csproj|solutionrelative:biblioteca\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -34,11 +26,28 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
+              "Title": "vistaLibros.cs",
+              "DocumentMoniker": "C:\\Users\\emman\\source\\repos\\Repasos-C\\Biblioteca\\Biblioteca\\Vistas\\vistaLibros.cs",
+              "RelativeDocumentMoniker": "Biblioteca\\Vistas\\vistaLibros.cs",
+              "ToolTip": "C:\\Users\\emman\\source\\repos\\Repasos-C\\Biblioteca\\Biblioteca\\Vistas\\vistaLibros.cs",
+              "RelativeToolTip": "Biblioteca\\Vistas\\vistaLibros.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAswEkAAABUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T01:24:08.82Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\emman\\source\\repos\\Repasos-C\\Biblioteca\\Biblioteca\\Program.cs",
               "RelativeDocumentMoniker": "Biblioteca\\Program.cs",
@@ -46,57 +55,17 @@
               "RelativeToolTip": "Biblioteca\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-13T01:05:38.927Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "modeloGenero.cs",
-              "DocumentMoniker": "C:\\Users\\emman\\source\\repos\\Repasos-C\\Biblioteca\\Biblioteca\\Modelos\\modeloGenero.cs",
-              "RelativeDocumentMoniker": "Biblioteca\\Modelos\\modeloGenero.cs",
-              "ToolTip": "C:\\Users\\emman\\source\\repos\\Repasos-C\\Biblioteca\\Biblioteca\\Modelos\\modeloGenero.cs",
-              "RelativeToolTip": "Biblioteca\\Modelos\\modeloGenero.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAsAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-12T23:47:37.338Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "modeloLibro.cs",
-              "DocumentMoniker": "C:\\Users\\emman\\source\\repos\\Repasos-C\\Biblioteca\\Biblioteca\\Modelos\\modeloLibro.cs",
-              "RelativeDocumentMoniker": "Biblioteca\\Modelos\\modeloLibro.cs",
-              "ToolTip": "C:\\Users\\emman\\source\\repos\\Repasos-C\\Biblioteca\\Biblioteca\\Modelos\\modeloLibro.cs",
-              "RelativeToolTip": "Biblioteca\\Modelos\\modeloLibro.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAIA4wCAAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-12T22:34:49.523Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-13T01:05:38.927Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "vistaLibros.cs",
-              "DocumentMoniker": "C:\\Users\\emman\\source\\repos\\Repasos-C\\Biblioteca\\Biblioteca\\Vistas\\vistaLibros.cs",
-              "RelativeDocumentMoniker": "Biblioteca\\Vistas\\vistaLibros.cs",
-              "ToolTip": "C:\\Users\\emman\\source\\repos\\Repasos-C\\Biblioteca\\Biblioteca\\Vistas\\vistaLibros.cs",
-              "RelativeToolTip": "Biblioteca\\Vistas\\vistaLibros.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAD4vzsAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-09T01:24:08.82Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "controlCRUDLibros.cs",
               "DocumentMoniker": "C:\\Users\\emman\\source\\repos\\Repasos-C\\Biblioteca\\Biblioteca\\Controladores\\controlCRUDLibros.cs",
               "RelativeDocumentMoniker": "Biblioteca\\Controladores\\controlCRUDLibros.cs",
               "ToolTip": "C:\\Users\\emman\\source\\repos\\Repasos-C\\Biblioteca\\Biblioteca\\Controladores\\controlCRUDLibros.cs",
               "RelativeToolTip": "Biblioteca\\Controladores\\controlCRUDLibros.cs",
-              "ViewState": "AgIAAEYAAAAAAAAAAAAxwFMAAABHAAAAAAAAAA==",
+              "ViewState": "AgIAADUAAAAAAAAAAAAQwD8AAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-11T00:12:17.787Z",
               "EditorCaption": ""
@@ -110,8 +79,7 @@
               "ToolTip": "C:\\Users\\emman\\source\\repos\\Repasos-C\\Biblioteca\\Biblioteca\\Vistas\\vistaLibros.cs [Dise\u00F1o]",
               "RelativeToolTip": "Biblioteca\\Vistas\\vistaLibros.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-08T22:43:01.601Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2025-07-08T22:43:01.601Z"
             }
           ]
         }

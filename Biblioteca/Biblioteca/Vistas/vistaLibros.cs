@@ -45,6 +45,45 @@ namespace Biblioteca.Controladores
             }
         }
 
+        private void btnActualizar_Click(object sender, EventArgs e)
+        {
+            modeloLibro infLibro = new modeloLibro()
+            {
+                idLibro = int.Parse(txtIdLibro.Text),
+                titulo = txtTitulo.Text,
+                escritor = txtEscritor.Text,
+                numeroPaginas = int.Parse(txtNumeroPaginas.Text),
+                idioma = txtIdioma.Text,
+                fechaPublicacion = dtFechaPublicacion.Value.Date,
+                idGenero = int.Parse(cbGenero.SelectedValue.ToString()),
+                cantidadCopias = int.Parse(txtCopias.Text)
+            };
+            if (controlCRUDLibros.ActualizarLibro(infLibro))
+            {
+                MessageBox.Show("Libro actualizado correctamente");
+                MostrarLibro();
+            }
+            else
+            {
+                MessageBox.Show("Error al actualizar el libro");
+            }
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            modeloLibro libro = dtgvLibros.CurrentRow.DataBoundItem as modeloLibro; 
+            if (MessageBox.Show("¿Está seguro de eliminar el libro seleccionado?", "Confirmación", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                controlCRUDLibros.EliminarLibro(libro.idLibro);
+                MessageBox.Show("Libro eliminado correctamente");
+                MostrarLibro();
+            }
+            else
+            {
+                MessageBox.Show("Operación cancelada");
+            }
+        }
+
         public void MostrarLibro()
         {
             dtgvLibros.AutoGenerateColumns = false;
@@ -73,7 +112,7 @@ namespace Biblioteca.Controladores
             txtNumeroPaginas.Text = libro.numeroPaginas.ToString();
             txtIdioma.Text = libro.idioma;
             dtFechaPublicacion.Value = libro.fechaPublicacion;
-            cbGenero.Text = libro.idGenero.ToString();
+            cbGenero.Text = libro.descripcionGenero.ToString();
             txtCopias.Text = libro.cantidadCopias.ToString();
 
         }
@@ -90,5 +129,7 @@ namespace Biblioteca.Controladores
             txtCopias.Text = "";
             MostrarLibro();
         }
+
+
     }
 }

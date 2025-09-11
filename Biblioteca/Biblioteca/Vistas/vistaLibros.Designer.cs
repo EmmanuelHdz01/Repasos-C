@@ -28,6 +28,14 @@
         private void InitializeComponent()
         {
             this.dtgvLibros = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.txtIdLibro = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -48,14 +56,6 @@
             this.btnActualizar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnLimpiar = new System.Windows.Forms.Button();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvLibros)).BeginInit();
             this.SuspendLayout();
             // 
@@ -78,6 +78,62 @@
             this.dtgvLibros.Size = new System.Drawing.Size(758, 329);
             this.dtgvLibros.TabIndex = 0;
             this.dtgvLibros.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvJalarDatos);
+            // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "idLibro";
+            this.Column1.HeaderText = "idLibro";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.DataPropertyName = "Titulo";
+            this.Column2.HeaderText = "Titulo";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            this.Column3.DataPropertyName = "Escritor";
+            this.Column3.HeaderText = "Escritor";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            // 
+            // Column4
+            // 
+            this.Column4.DataPropertyName = "NumeroPaginas";
+            this.Column4.HeaderText = "Numero de paginas";
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            // 
+            // Column5
+            // 
+            this.Column5.DataPropertyName = "Idioma";
+            this.Column5.HeaderText = "Idioma";
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            // 
+            // Column6
+            // 
+            this.Column6.DataPropertyName = "FechaPublicacion";
+            this.Column6.HeaderText = "Fecha de publicacion";
+            this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
+            // 
+            // Column7
+            // 
+            this.Column7.DataPropertyName = "descripcionGenero";
+            this.Column7.HeaderText = "Genero";
+            this.Column7.Name = "Column7";
+            this.Column7.ReadOnly = true;
+            // 
+            // Column8
+            // 
+            this.Column8.DataPropertyName = "CantidadCopias";
+            this.Column8.HeaderText = "Copias";
+            this.Column8.Name = "Column8";
+            this.Column8.ReadOnly = true;
             // 
             // label1
             // 
@@ -227,6 +283,7 @@
             this.btnActualizar.TabIndex = 18;
             this.btnActualizar.Text = "Actualizar libro";
             this.btnActualizar.UseVisualStyleBackColor = true;
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
             // btnEliminar
             // 
@@ -236,6 +293,7 @@
             this.btnEliminar.TabIndex = 19;
             this.btnEliminar.Text = "Eliminar libro";
             this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnLimpiar
             // 
@@ -246,62 +304,6 @@
             this.btnLimpiar.Text = "Limpiar campos";
             this.btnLimpiar.UseVisualStyleBackColor = true;
             this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
-            // 
-            // Column1
-            // 
-            this.Column1.DataPropertyName = "idLibro";
-            this.Column1.HeaderText = "idLibro";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            // 
-            // Column2
-            // 
-            this.Column2.DataPropertyName = "Titulo";
-            this.Column2.HeaderText = "Titulo";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            // 
-            // Column3
-            // 
-            this.Column3.DataPropertyName = "Escritor";
-            this.Column3.HeaderText = "Escritor";
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            // 
-            // Column4
-            // 
-            this.Column4.DataPropertyName = "NumeroPaginas";
-            this.Column4.HeaderText = "Numero de paginas";
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
-            // 
-            // Column5
-            // 
-            this.Column5.DataPropertyName = "Idioma";
-            this.Column5.HeaderText = "Idioma";
-            this.Column5.Name = "Column5";
-            this.Column5.ReadOnly = true;
-            // 
-            // Column6
-            // 
-            this.Column6.DataPropertyName = "FechaPublicacion";
-            this.Column6.HeaderText = "Fecha de publicacion";
-            this.Column6.Name = "Column6";
-            this.Column6.ReadOnly = true;
-            // 
-            // Column7
-            // 
-            this.Column7.DataPropertyName = "descripcionGenero";
-            this.Column7.HeaderText = "Genero";
-            this.Column7.Name = "Column7";
-            this.Column7.ReadOnly = true;
-            // 
-            // Column8
-            // 
-            this.Column8.DataPropertyName = "CantidadCopias";
-            this.Column8.HeaderText = "Copias";
-            this.Column8.Name = "Column8";
-            this.Column8.ReadOnly = true;
             // 
             // vistaLibros
             // 

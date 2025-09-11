@@ -40,6 +40,62 @@ namespace Biblioteca
             return true;
         }
 
+        public static bool ActualizarLibro(modeloLibro libro)
+        {
+            try
+            {
+                using (SqlConnection connection = conn())
+                {
+                    connection.Open();
+                    SqlCommand comando = new SqlCommand("UPDATE tblLibro " + 
+                                                        "SET Titulo = @Titulo, " +
+                                                            "Escritor = @Escritor, " +
+                                                            "NumeroPaginas = @NumeroPaginas, " +
+                                                            "Idioma = @Idioma, " +
+                                                            "FechaPublicacion = @FechaPublicacion, " +
+                                                            "idGenero = @idGenero, " +
+                                                            "CantidadCopias = @CantidadCopias " +
+                                                        "WHERE idLibro = @idLibro", connection);
+                    comando.Parameters.AddWithValue("@idLibro", libro.idLibro);
+                    comando.Parameters.AddWithValue("@Titulo", libro.titulo);
+                    comando.Parameters.AddWithValue("@Escritor", libro.escritor);
+                    comando.Parameters.AddWithValue("@NumeroPaginas", libro.numeroPaginas);
+                    comando.Parameters.AddWithValue("@Idioma", libro.idioma);
+                    comando.Parameters.AddWithValue("@FechaPublicacion", libro.fechaPublicacion);
+                    comando.Parameters.AddWithValue("@idGenero", libro.idGenero);
+                    comando.Parameters.AddWithValue("@CantidadCopias", libro.cantidadCopias);
+
+                    comando.ExecuteNonQuery();
+
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error al actualizar el libro: " + ex.Message);
+                return false;
+            }
+            return true;
+        }
+
+        public static void EliminarLibro(int eliminarLibro)
+        {
+            try
+            {
+                using (SqlConnection connection = conn())
+                {
+                    connection.Open();
+                    SqlCommand comando = new SqlCommand("DELETE FROM tblLibro " +
+                                                        "WHERE idLibro = @idLibro", connection);
+                    comando.Parameters.AddWithValue("@idLibro", eliminarLibro);
+
+                    comando.ExecuteNonQuery();
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error al eliminar el libro: " + ex.Message);
+            }
+        }
         public List<modeloGenero> MostrarGeneros ()
         {
             try
