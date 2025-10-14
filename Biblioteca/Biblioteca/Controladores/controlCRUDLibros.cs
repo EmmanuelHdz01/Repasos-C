@@ -176,8 +176,8 @@ namespace Biblioteca
 
         public static SqlConnection conn()
         {
-            SqlConnection conn = new SqlConnection("DATA SOURCE = WORK-TEAM\\SQLEXPRESS; DATABASE = Biblioteca; INTEGRATED SECURITY = True");
-            //SqlConnection conn = new SqlConnection("Data Source=.; DATABASE = Biblioteca; Integrated Security=True");
+            //SqlConnection conn = new SqlConnection("DATA SOURCE = WORK-TEAM\\SQLEXPRESS; DATABASE = Biblioteca; INTEGRATED SECURITY = True");
+            SqlConnection conn = new SqlConnection("Data Source=.; DATABASE = Biblioteca; Integrated Security=True");
             return conn;
         }
     }
