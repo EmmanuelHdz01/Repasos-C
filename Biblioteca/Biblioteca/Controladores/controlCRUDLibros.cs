@@ -15,7 +15,7 @@ namespace Biblioteca
         {
             try
             {
-                using (SqlConnection connection = conn())
+                using (SqlConnection connection = Conn())
                 {
                     connection.Open();
                     SqlCommand comando = new SqlCommand("INSERT INTO tblLibro " +
@@ -44,7 +44,7 @@ namespace Biblioteca
         {
             try
             {
-                using (SqlConnection connection = conn())
+                using (SqlConnection connection = Conn())
                 {
                     connection.Open();
                     SqlCommand comando = new SqlCommand("UPDATE tblLibro " + 
@@ -81,7 +81,7 @@ namespace Biblioteca
         {
             try
             {
-                using (SqlConnection connection = conn())
+                using (SqlConnection connection = Conn())
                 {
                     connection.Open();
                     SqlCommand comando = new SqlCommand("DELETE FROM tblLibro " +
@@ -100,7 +100,7 @@ namespace Biblioteca
         {
             try
             {
-                using (SqlConnection connection = conn())
+                using (SqlConnection connection = Conn())
                 {
                     connection.Open();
                     SqlCommand comando = new SqlCommand ("SELECT * FROM tblGenero", connection);
@@ -128,7 +128,7 @@ namespace Biblioteca
         {
             try
             {
-                using (SqlConnection connection = conn())
+                using (SqlConnection connection = Conn())
                 {
                     string query = @"SELECT L.idLibro,L.Titulo, L.Escritor, L.NumeroPaginas, L.Idioma, L.FechaPublicacion, G.idGenero,
                                     G.TipoGenero, L.CantidadCopias 
@@ -174,7 +174,7 @@ namespace Biblioteca
 
         }
 
-        public static SqlConnection conn()
+        public static SqlConnection Conn()
         {
             //SqlConnection conn = new SqlConnection("DATA SOURCE = WORK-TEAM\\SQLEXPRESS; DATABASE = Biblioteca; INTEGRATED SECURITY = True");
             SqlConnection conn = new SqlConnection("Data Source=.; DATABASE = Biblioteca; Integrated Security=True");

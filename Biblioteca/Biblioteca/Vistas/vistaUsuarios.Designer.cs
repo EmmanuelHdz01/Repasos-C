@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.dtgvUsuarios = new System.Windows.Forms.DataGridView();
+            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Usuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtUsuario = new System.Windows.Forms.TextBox();
@@ -36,14 +39,12 @@
             this.btnAgregar = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
-            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Usuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvUsuarios)).BeginInit();
             this.SuspendLayout();
             // 
             // dtgvUsuarios
             // 
+            this.dtgvUsuarios.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgvUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgvUsuarios.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ID,
@@ -52,8 +53,29 @@
             this.dtgvUsuarios.Location = new System.Drawing.Point(12, 112);
             this.dtgvUsuarios.Name = "dtgvUsuarios";
             this.dtgvUsuarios.ReadOnly = true;
-            this.dtgvUsuarios.Size = new System.Drawing.Size(521, 413);
+            this.dtgvUsuarios.Size = new System.Drawing.Size(504, 413);
             this.dtgvUsuarios.TabIndex = 0;
+            // 
+            // ID
+            // 
+            this.ID.DataPropertyName = "idUsuario";
+            this.ID.HeaderText = "ID";
+            this.ID.Name = "ID";
+            this.ID.ReadOnly = true;
+            // 
+            // Usuario
+            // 
+            this.Usuario.DataPropertyName = "Usuario";
+            this.Usuario.HeaderText = "Usuario";
+            this.Usuario.Name = "Usuario";
+            this.Usuario.ReadOnly = true;
+            // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "TipoUsuario";
+            this.Column1.HeaderText = "Tipo de usuario";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
             // 
             // label1
             // 
@@ -116,27 +138,6 @@
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
             this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
-            // 
-            // ID
-            // 
-            this.ID.DataPropertyName = "idUsuario";
-            this.ID.HeaderText = "ID";
-            this.ID.Name = "ID";
-            this.ID.ReadOnly = true;
-            // 
-            // Usuario
-            // 
-            this.Usuario.DataPropertyName = "Usuario";
-            this.Usuario.HeaderText = "Usuario";
-            this.Usuario.Name = "Usuario";
-            this.Usuario.ReadOnly = true;
-            // 
-            // Column1
-            // 
-            this.Column1.DataPropertyName = "TipoUsuario";
-            this.Column1.HeaderText = "Tipo de usuario";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
             // 
             // vistaUsuarios
             // 

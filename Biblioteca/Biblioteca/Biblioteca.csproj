@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="Controladores\controlCRUDLibros.cs" />
     <Compile Include="Controladores\controlLogin.cs" />
+    <Compile Include="Controladores\controlUsuarios.cs" />
     <Compile Include="Modelos\modeloGenero.cs" />
     <Compile Include="Modelos\modeloLibro.cs" />
     <Compile Include="Modelos\modelUsuarios.cs" />
