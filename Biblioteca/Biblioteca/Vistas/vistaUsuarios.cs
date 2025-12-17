@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Biblioteca.Controladores;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -30,6 +31,12 @@ namespace Biblioteca.Vistas
         private void btnEliminar_Click(object sender, EventArgs e)
         {
 
+        }
+        
+        public void MostrarUsuarios()
+        {
+            dtgvUsuarios.AutoGenerateColumns = false;
+            controlUsuarios.MostrarUsuarios(dtgvUsuarios);
         }
     }
 }
